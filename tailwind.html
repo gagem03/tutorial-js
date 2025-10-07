@@ -22,6 +22,22 @@
                 color: white;
                 text-decoration: underline;
             }
+            .hero{
+                background-image: url('sddefault.jpg');
+                background-size: cover;
+            }
+            .hero-container{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 0 !important;
+            }
         </style>
     </head>
     <body class="bg-gray-100 text-gray-100">
@@ -36,11 +52,13 @@
                 </ul>
             </div>
          </nav>
-            <!-- Main Content -->
-            <section class="text-center py-60 bg-gray-200">
-                <h2 class="text-4xl font-bold text-gray-800">Welcome to My Website</h2>
-                <p class="mt-4 text-lg text-gray-600">This was made using TailwindCSS!</p>
-                <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Get Started</button>
+            <!-- Hero Content -->
+            <section class="hero text-center py-60 bg-gray-200">
+                <div class="hero-container">
+                    <h2 class="text-4xl font-bold text-gray-800">Welcome to My Website</h2>
+                    <p class="mt-4 text-lg text-gray-600">This was made using TailwindCSS!</p>
+                    <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Get Started</button>
+                </div>
             </section>
     </body>
 </html>
