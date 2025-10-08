@@ -19,3 +19,6 @@ document.getElementById("days").textContent = "dd";
 document.getElementById("hrs").textContent = "hh";
 document.getElementById("mins").textContent = "mm";
 document.getElementById("secs").textContent = "ss";
+
+// Store the current date & time
+var currentDate = new Date();
