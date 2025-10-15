@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            // example of an if-else statement
+            // use comparison and logical operators
+            var age = 24;
+            if (age >= 18) {
+                console.log("Access Granted!");
+            }
+            else if (age < 18 || age >= 1) {
+                console.log("Access Denied!");
+            }
+            else {
+                console.log("wtf");
+            }
+
+            // ternary operator
+            age >= 18 ? console.log("Access Granted!") : console.log("Access Denied!");
+
+            // switch statement
+            switch(age){
+                case age >= 18:
+                    console.log("Access Granted!");
+                    break;
+                case age < 18 || age >= 1:
+                    console.log("Access Denied!");
+                    break;
+                default:
+                    console.log("wtf");
+                    break;
+            }
+        </script>
+    </body>
+</html>
